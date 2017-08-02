@@ -8,8 +8,8 @@ class Student(object):
 
     def __init__(self, name, ID, GPA):
         self.name = name
-        self._GPA = GPA     # protected
-        self.__ID = ID      # private
+        self._GPA = GPA     # single underscore == protected
+        self.__ID = ID      # double underscore == private
 
     def get_GPA(self):
         return self._GPA
